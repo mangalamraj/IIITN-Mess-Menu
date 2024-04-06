@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday_aisehi</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            background: url(bgimg.jpg) no-repeat;
+            /* Set a light background color */
+            background-repeat: no-repeat;
+            /* Prevents background image from repeating */
+            background-size: cover;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        .header {
+            background-color: black;
+            color: pink;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            /* Align columns evenly */
+            flex-wrap: wrap;
+            /* Allow columns to wrap to the next line on smaller screens */
+            margin: 0 auto;
+            max-width: 1200px;
+            /* Set a maximum width for the container */
+        }
+
+        .column {
+            flex: 1;
+            flex-basis: calc(25% - 40px);
+            /* Set column width to 25% minus padding */
+            padding: 10px;
+            padding-left: 10px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Add a subtle box shadow */
+            margin-bottom: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        .column h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: x-large;
+            color: #666
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .image-container img {
+            width: 100px;
+            /* Set a fixed width for the circular images */
+            height: 100px;
+            /* Set a fixed height for the circular images */
+            border-radius: 50%;
+            margin: 10px auto;
+            transition: transform 0.3s ease;
+            /* Add a smooth transition effect */
+            display: block;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.4);
+            /* Scale up the image on hover */
+        }
+
+        .image-container p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #666;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            font-size: medium;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>SUNDAY</h1>
+    </div>
+
+    <div class="container">
+        <div class="column">
+            <h2>BREAKFAST</h2>
+            <div class="image-container">
+                <img src="poha.jpg" alt="Poha">
+                <p>Poha</p>
+                <img src="milk.jpeg" alt="Milk">
+                <p>Milk</p>
+                <img src="tea.jpg" alt="Tea">
+                <p>Tea</p>
+                <img src="bbj.jpeg" alt="Bread, Butter and Jam">
+                <p>Bread, Butter and Jam</p>
+                <img src="seasonal.jpg" alt="Seasonal Fruit">
+                <p>Seasonal Fruit</p>
+            </div>
+        </div>
+        <div class="column">
+            <h2>LUNCH</h2>
+            <div class="image-container">
+                <img src="puri.jpg" alt="Puri">
+                <p>Puri</p>
+                <img src="chhole.jpg" alt="Chhole">
+                <p>Chhole</p>
+                <img src="rice.jpg" alt="Rice">
+                <p>Rice</p>
+                <img src="dal.jpg" alt="Dal">
+                <p>Dal</p>
+                <img src="salad.jpg" alt="Salad">
+                <p>Salad</p>
+                <img src="raita.jpg" alt="Boondi Raita">
+                <p>Boondi Raita</p>
+            </div>
+        </div>
+        <div class="column">
+            <h2>SNACKS</h2>
+            <div class="image-container">
+                <img src="oreo.jpg" alt="Oreo">
+                <p>Oreo</p>
+                <img src="tea.jpg" alt="Tea">
+                <p>Tea</p>
+            </div>
+        </div>
+        <div class="column">
+            <h2>DINNER</h2>
+            <div class="image-container">
+                <img src="paneer.jpg" alt="Paneer Masala">
+                <p>Paneer Masala</p>
+                <img src="chapati.jpg" alt="Chapati">
+                <p>Chapati</p>
+                <img src="jeera_rice.jpg" alt="Jeera Rice">
+                <p>Jeera Rice</p>
+                <img src="dal_fry.jpg" alt="Dal Fry">
+                <p>Dal Fry</p>
+                <img src="salad.jpg" alt="Salad">
+                <p>Salad</p>
+                <img src="rasgulla.jpg" alt="Rasgulla/Ras-Malai">
+                <p>Rasgulla/Ras-Malai</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

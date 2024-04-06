@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mess_menu_css.css">
+    <style>
+        body {
+            font-family: latha;
+            color: white;
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0)), url(food_new.jpg) no-repeat;
+            background-repeat: no-repeat;
+            /* Prevents background image from repeating */
+            background-size: cover;
+        }
+
+
+        .box {
+            width: 900px;
+            float: right;
+            border: 1px solid none;
+        }
+
+        .box ul {
+            list-style-type: none;
+            /* Hides bullet points for list items */
+        }
+
+        .box ul li {
+            width: 120px;
+            float: left;
+            margin: 10px auto;
+            text-align: center;
+
+        }
+
+        .box ul li a {
+            text-decoration: none;
+            color: darkgray;
+        }
+
+        .box ul li:hover {
+            background-color: brown;
+        }
+
+        .box ul li a:hover {
+            color: white;
+        }
+
+        .wd {
+            width: 300px;
+            height: 550px;
+            background-color: black;
+            opacity: 0.9;
+            padding: 60px;
+        }
+
+        .wd h1 {
+            text-align: center;
+            /* text-transform: uppercase; */
+            font-weight: 100px;
+        }
+
+        .tab .tablinks {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .tablinks {
+            width: 250px;
+            padding: 10px;
+            margin: 5px auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: black;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            /* Ensure buttons are block elements */
+            text-decoration: none;
+            /* Remove default underline for links */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <ul type="" none>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Menu</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+            <li>
+                <a href="">Feedback</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="wd">
+        <h1>MealMap</h1><br>
+
+        <div> <a href="aisehi.html" class="tablinks" onclick="openCity(event, 'Sunday')">Sunday</a></div><br>
+        <div><a href="monday.html" class="tablinks" onclick="openCity(event, 'Monday')">Monday</a></div><br>
+        <div><a href="tuesday.html" class="tablinks" onclick="openCity(event, 'Tuesday')">Tuesday</a></div><br>
+        <div><a href="wednesday.html" class="tablinks" onclick="openCity(event, 'Wednesday')">Wednesday</a></div><br>
+        <div><a href="thursday.html" class="tablinks" onclick="openCity(event, 'Thursday')">Thursday</a></div><br>
+        <div><a href="friday.html" class="tablinks" onclick="openCity(event, 'Friday')">Friday</a></div><br>
+        <div><a href="saturday.html" class="tablinks" onclick="openCity(event, 'Saturday')">Saturday</a></div><br>
+    </div>
+
+
+    </div>
+
+
+
+    <!-- <h1>Hostel Menu</h1>
+    <h2>Click on the Days to see delicious Foooood.....<h2>
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Sunday')">Sunday</button>
+                <button class="tablinks" onclick="openCity(event, 'Monday')">Monday</button>
+                <button class="tablinks" onclick="openCity(event, 'Tuesday')">Tuesday</button>
+            </div>
+
+            <div id="Sunday" class="tabcontent">
+                <table>
+                    <tr bgcolor=#EE8D8D>
+                        <th>Breakfast</th>
+                        <th>Lunch</th>
+                        <th>Dinner</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <ul>
+                                <li>Dal Tadka</li>
+                                <li>Zeera Rice</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Paneer</li>
+                                <li>Puri</li>
+                                <li>Chola</li>
+                                <li>Ice Cream</li>
+                            </ul>
+                        </td>
+
+                    </tr>
+                </table>
+
+            </div>
+
+            <div id="Monday" class="tabcontent">
+                <table>
+                    <tr bgcolor=#9BEBB3>
+                        <th>Breakfast</th>
+                        <th>Lunch</th>
+                        <th>Dinner</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Mon-BF-1</li>
+                                <li>Mon-BF-2</li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <ul>
+                                <li>Mon-L-1</li>
+                                <li>Mon-L-2</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Mon-D-1</li>
+                                <li>Mon-D-2</li>
+                            </ul>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <div id="Tuesday" class="tabcontent">
+                <table>
+                    <tr bgcolor=#FF9933>
+                        <th>Breakfast</th>
+                        <th>Lunch</th>
+                        <th>Dinner</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Tue-BF-1</li>
+                                <li>Tue-BF-2</li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <ul>
+                                <li>Tue-L-1</li>
+                                <li>Tue-L-2</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Tue-D-1</li>
+                                <li>Tue-D-2</li>
+                            </ul>
+                        </td>
+
+                    </tr>
+            </div> -->
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
